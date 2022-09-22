@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hump_flutter/pages/welcome_loginV2.dart';
+import 'package:get/get.dart';
+import 'package:hump_flutter/pages/signUp.dart';
 
-class WelcomeLogin extends StatelessWidget {
-  const WelcomeLogin({Key? key}) : super(key: key);
+class WelcomeLogin2 extends StatelessWidget {
+  const WelcomeLogin2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class WelcomeLogin extends StatelessWidget {
               Container(
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage("images/Payment_Information.png")),
+                      image: AssetImage("images/welcomeLogin2.png")),
                 ),
                 height: 430,
               ),
@@ -24,30 +24,40 @@ class WelcomeLogin extends StatelessWidget {
                 child: Column(
                   children: [
                     const SizedBox(
-                      height: 30,
+                      height: 25,
                     ),
                     Text(
                       "Welcome to Bank",
                       textDirection: TextDirection.ltr,
                       style: GoogleFonts.roboto(
                         color: Colors.white,
-                        fontSize: 24,
+                        fontSize: 23,
                         fontWeight: FontWeight.bold,
                       ),
                       textAlign: TextAlign.center,
                     ),
+                    Padding(
+                      padding:
+                          const EdgeInsets.only(right: 40, left: 40, top: 8),
+                      child: Text(
+                        "Deliver your Cloth arround the world without hesitation",
+                        style: GoogleFonts.roboto(
+                          color: Colors.white,
+                          fontSize: 18,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
                     const SizedBox(
-                      height: 30,
+                      height: 18,
                     ),
                     SizedBox(
                         height: 50,
                         width: 300,
                         child: ElevatedButton(
-                          onPressed: () {
-                            Get.to(WelcomeLogin2());
-                          },
+                          onPressed: () {},
                           child: Text(
-                            "Continue with Email",
+                            "Login",
                             style: GoogleFonts.roboto(
                               color: Colors.white,
                               fontSize: 16,
@@ -62,15 +72,17 @@ class WelcomeLogin extends StatelessWidget {
                           ),
                         )),
                     const SizedBox(
-                      height: 20,
+                      height: 12,
                     ),
                     SizedBox(
                         height: 50,
                         width: 300,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Get.to(SignUp());
+                          },
                           child: Text(
-                            "Continue with Number Phone",
+                            "Register",
                             style: GoogleFonts.roboto(
                               color: Colors.white,
                               fontSize: 16,
@@ -84,30 +96,19 @@ class WelcomeLogin extends StatelessWidget {
                             ),
                           ),
                         )),
+                    SizedBox(
+                      height: 7,
+                    ),
+                    SizedBox(
+                      height: 70,
+                      width: 70,
+                      child: IconButton(
+                          onPressed: () {},
+                          icon: Image.asset("images/biometric.png")),
+                    ),
                     const SizedBox(
                       height: 20,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          "Don't have an account?",
-                          style: GoogleFonts.roboto(
-                            color: Colors.white,
-                            fontSize: 15,
-                          ),
-                        ),
-                        TextButton(
-                            onPressed: () {},
-                            child: Text(
-                              "Register",
-                              style: GoogleFonts.roboto(
-                                color: Color.fromARGB(255, 25, 0, 250),
-                                fontSize: 15,
-                              ),
-                            ))
-                      ],
-                    )
                   ],
                 ),
                 alignment: Alignment.bottomCenter,

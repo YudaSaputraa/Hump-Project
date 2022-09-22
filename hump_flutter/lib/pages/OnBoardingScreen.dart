@@ -4,6 +4,7 @@ import 'package:hump_flutter/pages/welcome_login.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import 'package:sizer/sizer.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({Key? key}) : super(key: key);
@@ -22,11 +23,11 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           Column(
             children: [
               Container(
-                height: 450,
+                height: 430,
               ),
               Container(
                 alignment: Alignment.bottomCenter,
-                height: 309,
+                height: 329,
                 decoration: const BoxDecoration(
                   color: Color.fromARGB(255, 41, 209, 221),
                   borderRadius: BorderRadius.only(
@@ -57,37 +58,37 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                               ),
                               child: Column(
                                 children: [
-                                  const SizedBox(
-                                    height: 55,
+                                  SizedBox(
+                                    height: 53,
                                   ),
                                   Image.asset(
                                     "images/image.png",
                                     alignment: Alignment.topCenter,
                                   ),
                                   const SizedBox(
-                                    height: 80,
+                                    height: 70,
                                   ),
                                   Text(
                                     "Welcome to Bank",
                                     textDirection: TextDirection.ltr,
                                     style: GoogleFonts.roboto(
                                       color: Colors.white,
-                                      fontSize: 35,
+                                      fontSize: 30,
                                       fontWeight: FontWeight.bold,
                                     ),
                                     textAlign: TextAlign.center,
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(
-                                      right: 30,
-                                      left: 30,
+                                      right: 60,
+                                      left: 60,
                                       top: 20,
                                     ),
                                     child: Text(
                                       "Reference site about Lorem Ipsum, giving information origin as well as a random",
                                       style: GoogleFonts.roboto(
                                         color: Colors.white,
-                                        fontSize: 20,
+                                        fontSize: 16,
                                       ),
                                       textAlign: TextAlign.center,
                                     ),
@@ -109,25 +110,25 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                                     alignment: Alignment.topCenter,
                                   ),
                                   const SizedBox(
-                                    height: 60,
+                                    height: 55,
                                   ),
                                   Text(
                                     "Easy Fund Transfer",
                                     style: GoogleFonts.roboto(
                                       color: Colors.white,
-                                      fontSize: 34,
+                                      fontSize: 30,
                                       fontWeight: FontWeight.bold,
                                     ),
                                     textAlign: TextAlign.center,
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(
-                                        right: 30, left: 30, top: 20),
+                                        right: 60, left: 60, top: 20),
                                     child: Text(
                                       "Reference site about Lorem Ipsum, giving information origin as well as a random",
                                       style: GoogleFonts.roboto(
                                         color: Colors.white,
-                                        fontSize: 20,
+                                        fontSize: 16,
                                       ),
                                       textAlign: TextAlign.center,
                                     ),
@@ -152,25 +153,25 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                                     alignment: Alignment.topCenter,
                                   ),
                                   const SizedBox(
-                                    height: 100,
+                                    height: 95,
                                   ),
                                   Text(
                                     "Secure Mobile Banking",
                                     style: GoogleFonts.roboto(
                                       color: Colors.white,
-                                      fontSize: 35,
+                                      fontSize: 30,
                                       fontWeight: FontWeight.bold,
                                     ),
                                     textAlign: TextAlign.center,
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(
-                                        right: 30, left: 30, top: 18),
+                                        right: 60, left: 60, top: 20),
                                     child: Text(
                                       "Reference site about Lorem Ipsum, giving information origin as well as a random",
                                       style: GoogleFonts.roboto(
                                         color: Colors.white,
-                                        fontSize: 20,
+                                        fontSize: 16,
                                       ),
                                       textAlign: TextAlign.center,
                                     ),
@@ -207,7 +208,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                           ],
                         ),
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(20, 620, 20, 30),
+                          padding: const EdgeInsets.fromLTRB(20, 605, 20, 30),
                           child: Center(
                             child: Column(
                               children: [
@@ -215,21 +216,21 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                                   height: 50,
                                   width: 300,
                                   child: FloatingActionButton.extended(
-                                      onPressed: () {
-                                        Get.off(WelcomeLogin());
-                                      },
-                                      elevation: 1,
-                                      backgroundColor:
-                                          Color.fromARGB(255, 60, 223, 245),
-                                      label: Text(
-                                        "Get Started",
-                                        style: GoogleFonts.roboto(
-                                          color: Colors.white,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                                    onPressed: () {
+                                      Get.off(WelcomeLogin());
+                                    },
+                                    elevation: 1,
+                                    backgroundColor:
+                                        Color.fromARGB(255, 60, 223, 245),
+                                    label: Text(
+                                      "Get Started",
+                                      style: GoogleFonts.roboto(
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold,
                                       ),
                                     ),
+                                  ),
                                 )
                               ],
                             ),

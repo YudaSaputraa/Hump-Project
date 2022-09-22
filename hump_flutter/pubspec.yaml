@@ -33,6 +33,8 @@ dependencies:
   get: ^4.6.5
   getxbottombar: ^0.0.1
   google_fonts: ^3.0.1
+  intl_phone_field: ^3.1.0
+  sizer: ^2.0.15
   smooth_page_indicator: any
 
 dev_dependencies:
